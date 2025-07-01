@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import HomePage from './components/HomePage';
+import AssetForm from './components/AssetForm';
+import AssetList from './components/AssetList';
+import MasterPage from './components/MasterPage';
+import EquipmentsPage from './components/EquipmentsPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [page, setPage] = useState('home');
+
+ return (
+  <div className="App">
+    {page === 'home' && <HomePage setPage={setPage} />}
+    {page === 'form' && <AssetForm setPage={setPage} />}
+    {page === 'list' && <AssetList setPage={setPage} />}
+    {page === 'master' && <MasterPage setPage={setPage} />}
+    {page === 'equipment' && <EquipmentsPage setPage={setPage} />}
+
+  </div>
+);
+
 }
 
 export default App;

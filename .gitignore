@@ -21,3 +21,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore node_modules
+node_modules/
+
+# Ignore environment variable files
+.env
+
+# Ignore Mac system files (if copied from Mac)
+.DS_Store
+
+# Ignore build files (React)
+build/
+
+# Ignore logs
+npm-debug.log*

@@ -1,0 +1,57 @@
+.equipments-page {
+  max-width: 750px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #ddd;
+}
+
+.equipments-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
